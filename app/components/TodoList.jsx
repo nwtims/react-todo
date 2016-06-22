@@ -5,6 +5,7 @@ var TodoList = React.createClass({
   render: function () {
     var {todos} = this.props;
     var renderTodos = () => {
+      console.log({todos});
       return todos.map((todo) => {
         return (
           <Todo key={todo.id} {...todo}/>
