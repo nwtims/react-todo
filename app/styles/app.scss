@@ -8,8 +8,9 @@
 // Components
 // @import "components/navigation";
 // @import "components/clock";
-// @import "components/controls";
-// @import "components/page-title";
+@import "components/container";
+@import "components/page-title";
+@import "components/todo";
 
 $space-large: 2.5rem;
 $title-color: navy;
