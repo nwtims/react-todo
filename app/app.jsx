@@ -12,10 +12,6 @@ store.subscribe(() => {
   console.log('New state', store.getState());
 });
 
-store.dispatch(actions.addTodo('complete expense report'));
-store.dispatch(actions.setSearchText('yard'));
-store.dispatch(actions.toggleShowCompleted());
-
 //Load foundation
 $(document).foundation();
 
