@@ -6,7 +6,7 @@ var $ = require('jquery');
 var TestUtils = require('react-addons-test-utils');
 
 import {configure} from 'configureStore';
-var TodoApp = require('TodoApp');
+import {TodoApp} from 'TodoApp';
 import TodoList from 'TodoList'
 
 describe('TodoApp', () => {
