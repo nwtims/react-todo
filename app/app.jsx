@@ -11,8 +11,11 @@ import router from 'app/router';
 
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
+    store.dispatch(actions.login(user.uid));
+    // console.log('state is', state);
     hashHistory.push('/todos');
   } else {
+    store.dispatch(actions.logout());
     hashHistory.push('/');
   }
 });
